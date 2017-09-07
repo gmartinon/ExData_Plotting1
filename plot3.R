@@ -22,8 +22,8 @@ plot(datetime, df$Sub_metering_1,
      ylab = "Energy sub metering",
      type = "l",
      col = "black")
-lines(df$Date + df$Time, df$Sub_metering_2, col = "red")
-lines(df$Date + df$Time, df$Sub_metering_3, col = "blue")
+lines(datetime, df$Sub_metering_2, col = "red")
+lines(datetime, df$Sub_metering_3, col = "blue")
 legend("topright",
        legend = grep("Sub", colnames(df), value = TRUE),
        lty = c(1,1,1),
